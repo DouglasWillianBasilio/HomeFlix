@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css");
 * {
     margin: 0;
     padding: 0;
@@ -276,3 +276,189 @@ header .content .details h3 span{
 header .content .details h3 i{
   margin-right: 5px;
 }   
+
+header .content .btns {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+header .content .btns a {
+    padding: 8px 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    background: linear-gradient(90deg, #00bdff, #0079ff);
+    border-radius: 5px;
+    color: #fff;
+    margin-left: 10px;
+    animation: button 1s ease infinite;
+}
+
+@keyframes button {
+    0%{
+        background: linear-gradient(0deg, #00bdff, #0079ff);
+    }
+    12%{
+        background: linear-gradient(45deg, #00bdff, #0079ff);
+    }
+    24%{
+        background: linear-gradient(95deg, #00bdff, #0079ff);
+    }
+    36%{
+        background: linear-gradient(145deg, #00bdff, #0079ff);
+    }
+    48%{
+        background: linear-gradient(195deg, #00bdff, #0079ff);
+    }
+    60%{
+        background: linear-gradient(245deg, #00bdff, #0079ff);
+    }
+    72%{
+        background: linear-gradient(295deg, #00bdff, #0079ff);
+    }
+    100%{
+        background: linear-gradient(360deg, #00bdff, #0079ff);
+    }
+}
+
+header section {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    padding: 0px 50px;
+    bottom: 20px;
+    color: #fff;
+}
+header section .cards {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    /* border: 1px solid #fff; */
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+header section .cards::-webkit-scrollbar {
+    display: none;
+}
+header section .cards .card{
+    position: relative;
+    min-width: 130px;
+    height: 180px;
+    /* border: 1px solid #fff; */
+    border-radius: 8px;
+    margin-right: 10px;
+    background: #000;
+    transition: .3s linear;
+}
+header section .cards .card .poster{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    position: relative;
+}
+header section .cards .card:hover{
+   min-width: 300px;
+   overflow: hidden;
+}
+header section .cards .card .rest_card{
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   border-radius: 8px;
+   left: 0;
+   top: 0;
+   z-index: 999999;
+   opacity: 0;
+   transition: 1s linear;
+}
+header section .cards .card .rest_card img{
+   position: relative;
+   width: 100%;
+   height: 100%;
+   border-radius: 8px;
+   z-index: -1;
+}
+
+header section .cards .card .rest_card::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #000);
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+header section .cards .card .rest_card .cont {
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    left: 0;
+    color: #fff;
+    padding: 0px 20px;
+}
+header section .cards .card .rest_card .cont .sub {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header section .cards .card .rest_card .cont .sub p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(255, 255, 255, .7);
+}
+header section .cards .card .rest_card .cont .sub h3 {
+    color: #fff;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+header section .cards .card .rest_card .cont .sub h3 span {
+    background: yellow;
+    color: #000;
+    padding: 0px 3px;
+    margin: 0px 5px 0px 10px;
+    font-weight: 500;
+    border-radius: 2px;
+}
+
+header section .cards .card .rest_card .cont .sub h3 i {
+    margin-right: 3px;
+}
+
+header section .cards .card:hover .rest_card {
+    opacity: 1;
+}
+
+header section .bi-chevron-left,
+.bi-chevron-right {
+    position: absolute;
+    top: 50%;
+    left: 3%;
+    width: 25px;
+    height: 25px;
+    background: rgb(255, 255, 255, .3);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: .3s linear;
+    z-index: 99999999;
+    opacity: 0;
+}
+header section .bi-chevron-right {
+    left: unset;
+    right: 3%;
+}
+header section:hover .bi-chevron-right {
+    opacity: 1;
+}
+header section:hover .bi-chevron-left {
+    opacity: 1;
+}
