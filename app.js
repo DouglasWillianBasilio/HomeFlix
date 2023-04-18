@@ -83,13 +83,15 @@ fetch(json_url).then(Response => Response.json())
 
         let video = document.getElementsByTagName('video')[0];
         let play = document.getElementById('play');
-
-        if (video.paused) {
-            video.play();
-            play.innerHTML = `Play <ion-icon name="pause-outline"></ion-icon>`
-        } else {
-            play.innerHTML = `Assistir <ion-icon name="play-outline"></ion-icon>`
-            video.pause();
-        }
+        play.addEventListener('click', () =>{
+            if (video.paused) {
+                video.play();
+                play.innerHTML = `Play <ion-icon name="pause-outline"></ion-icon>`
+            } else {
+                video.pause();
+                play.innerHTML = `Assistir <ion-icon name="play-outline"></ion-icon>`
+            }
+        })
+        
 
     });
