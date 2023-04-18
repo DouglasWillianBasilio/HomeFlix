@@ -169,7 +169,7 @@ header nav .search_user .search .card {
     align-items: center;
     margin-bottom: 5px;
     padding: 3px 0px;
-    display: none;
+    /* display: none; */
 }
 
 header nav .search_user .search .card::before {
