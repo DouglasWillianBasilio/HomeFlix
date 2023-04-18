@@ -88,5 +88,17 @@
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+        fetch(json_url).then((Response) => Response.json()).then(data => {
+            let filmes_array = data.filter(ele => {
+                return ele.name === "The Batman";
+            });
+
+            document.getElementById('title').innerText = filmes_array[0].name;
+            document.getElementById('gen').innerText = filmes_array[0].genre;
+            document.getElementById('date').innerText = filmes_array[0].date;
+            document.getElementById('rate').innerHTML = `<span>IMDB  </span><ion-icon name="star-outline"></ion-icon> ${filmes_array[0].imdb}`;
+        })
+    </script>
 </body>
 </html>
