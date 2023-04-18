@@ -12,6 +12,32 @@
     "medium": "video/the boys 720ph.mp4",
     "high": "video/the boys 1080ph.mp4"
 }, {
+    "name": "Batem a Porta",
+    "imdb": 6.1,
+    "date": "2022",
+    "sposter": "img/batem-a-porta.jpg",
+    "bposter": "img/batem-a-porta1.jpg",
+    "genre": "Terros/Misterio",
+    "type": "movie",
+    "url": "batemaporta.html",
+    "trailer": "john wick.webm",
+    "low": "video/theboys.webm",
+    "medium": "video/the boys 720ph.mp4",
+    "high": "video/the boys 1080ph.mp4"
+}, {
+    "name": "A Baleia",
+    "imdb": 7.7,
+    "date": "2022",
+    "sposter": "img/a-baleia.jpg",
+    "bposter": "img/a-baleia1.jpg",
+    "genre": "Drama",
+    "type": "movie",
+    "url": "abaleia.html",
+    "trailer": "john wick.webm",
+    "low": "video/theboys.webm",
+    "medium": "video/the boys 720ph.mp4",
+    "high": "video/the boys 1080ph.mp4"
+}, {
     "name": "Money Heist",
     "imdb": 9.9,
     "date": "2020",
