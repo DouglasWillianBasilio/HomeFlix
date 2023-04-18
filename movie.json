@@ -11,6 +11,19 @@
     "low": "video/theboys.webm",
     "medium": "video/the boys 720ph.mp4",
     "high": "video/the boys 1080ph.mp4"
+},{
+    "name": "The Batman",
+    "imdb": 7.8,
+    "date": "2022",
+    "sposter": "img/batman.jpg",
+    "bposter": "img/batman1.jpg",
+    "genre": "Action",
+    "type": "movie",
+    "url": "batman.html",
+    "trailer": "john wick.webm",
+    "low": "video/theboys.webm",
+    "medium": "video/the boys 720ph.mp4",
+    "high": "video/the boys 1080ph.mp4"
 }, {
     "name": "Batem a Porta",
     "imdb": 6.1,
