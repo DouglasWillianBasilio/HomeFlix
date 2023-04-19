@@ -472,6 +472,12 @@ header section:hover .bi-chevron-left {
     }
 }
 
+@media screen and (max-width: 1240px) {
+    div.btns {
+        overflow-y: hidden;
+    }
+}
+
 @media screen and (max-width: 788px) {
     header {
         width: 100%;
@@ -506,6 +512,8 @@ header section:hover .bi-chevron-left {
         height: 180%;
     }
 } 
+
+
 
 
 
