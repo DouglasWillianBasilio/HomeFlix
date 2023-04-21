@@ -12,6 +12,19 @@
     "medium": "video/the boys 720ph.mp4",
     "high": "video/the boys 1080ph.mp4"
 },{
+    "name": "Capitão América: Guerra Civil",
+    "imdb": 8.2,
+    "date": "2016",
+    "sposter": "img/capitaoamericaguerra.webp",
+    "bposter": "img/capitaoamericaguerra1.webp",
+    "genre": "Ação/Filme de Super-Heói",
+    "type": "movie",
+    "url": "capitaoAmericaGuerra.html",
+    "trailer": "john wick.webm",
+    "low": "video/theboys.webm",
+    "medium": "video/the boys 720ph.mp4",
+    "high": "video/the boys 1080ph.mp4"
+},{
     "name": "Jujutsu Kaisen",
     "imdb": 8.1,
     "date": "2018",
