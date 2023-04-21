@@ -95,6 +95,7 @@ fetch(json_url).then(Response => Response.json())
 
         let series = document.getElementById('series');
         let filmes = document.getElementById('filmes');
+        let animes = document.getElementById('animes');
 
         series.addEventListener('click', () => {
             cards.innerHTML = '';
@@ -153,6 +154,37 @@ fetch(json_url).then(Response => Response.json())
                 cards.appendChild(card);
             });
         })
+
+        animes.addEventListener('click', () => {
+            cards.innerHTML = '';
+
+            let animes_array = data.filter(ele => {
+                return ele.type === "animes";
+            });
+
+            animes_array.forEach((ele, i) => {
+                let {name, imdb, date, sposter, bposter, genre, url} = ele;
+                let card = document.createElement('a');
+                card.classList.add('card');
+                card.href = url;
+                card.innerHTML = `
+                <img src="${sposter}" alt="${name}" class="poster">
+                        <div class="rest_card">
+                            <img src="${bposter}" alt="">
+                            <div class="cont">
+                                <h4>${name}</h4>
+                                <div class="sub">
+                                    <p>${genre}, ${date}</p>
+                                    <h3><span>IMDB </span> <ion-icon name="star-outline"></ion-icon> ${imdb}</h3>
+                                </div>
+                            </div>
+                        </div>
+                `
+                cards.appendChild(card);
+            });
+        })
+
+        
         
 
     });
