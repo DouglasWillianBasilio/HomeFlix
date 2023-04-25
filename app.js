@@ -183,8 +183,6 @@ fetch(json_url).then(Response => Response.json())
                 cards.appendChild(card);
             });
         })
-
-        
         
 
     });
